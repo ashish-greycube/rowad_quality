@@ -17,6 +17,7 @@
   "cb_1",
   "employee",
   "employee_name",
+  "company",
   "department",
   "ard_sb",
   "amount_request_detail",
@@ -122,10 +123,18 @@
    "fieldtype": "Currency",
    "label": "Balance After Request",
    "read_only": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2022-08-02 11:30:53.629393",
+ "modified": "2022-08-22 07:00:17.420222",
  "modified_by": "Administrator",
  "module": "Rowad Quality",
  "name": "Amount Request",
